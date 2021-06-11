@@ -1,0 +1,12 @@
+.company-container{
+    background: url('../img/stockBg.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    min-height: 100vh;
+    background-size: contain;
+    width: 100%;
+}
+.comp-content{
+    padding:2%;
+}

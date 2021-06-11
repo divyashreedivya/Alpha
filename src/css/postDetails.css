@@ -1,0 +1,62 @@
+.post-container{
+    background: url('../img//postDetailBg.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    background-position: bottom;
+    min-height: 100vh;
+    position: relative;
+     bottom :0;
+     color: white;
+     margin:0;
+     padding: 0;
+}
+.post-img{
+    height:250px;
+    width: 250px;
+    border-radius: 25px;
+    margin:2%;
+    box-shadow: 5px 5px 3px 0px #00000081;
+}
+.iconbtn{
+    background-color: rgba(0, 0, 0, 0);
+    border:0;
+position: absolute;
+    bottom:10%;
+    left:5%;
+}
+.pubdate{
+    bottom:4%;
+    float: center;
+    position: absolute;
+}
+.closeicons{
+    display: none;
+}
+.showicons{
+    display: block;
+    float: left;
+    position: absolute;
+    bottom:15%;
+    z-index:15;
+    color:#835db4;
+    border-radius: 25px;
+    background-color: rgb(0, 0, 0);
+    border: solid 2px #3E245F;
+    width: 250px;
+    margin-left:5%;
+    padding: 1%;
+    text-align: left;
+}
+
+.likeicon{
+    right:5%;
+    bottom: 10%;
+    position: absolute;
+}
+.likeiconno{
+    font-size: 120%;
+    right:10%;
+    bottom:10%;
+    position: absolute;
+}

@@ -1,0 +1,22 @@
+.inst-container{
+    color: white;
+    background: url('../img/instBg.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+}
+.instdetail{
+    width: 50%;
+    float: right;
+    margin:2% ;
+    text-align: left;
+    border: double 5px white;
+    padding: 1%;
+}
+@media all and (max-width:768px){
+    .instdetail{
+        width: 100%;
+    }
+} 

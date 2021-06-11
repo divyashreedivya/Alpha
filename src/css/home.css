@@ -1,0 +1,23 @@
+
+.homeBody{
+    background: url('../img/landingBack.svg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: bottom;
+    min-height: 100vh;
+    height: 100%;
+}
+
+.homecon{
+    /* position: absolute; */
+    z-index:-1;
+}
+
+@media all and (max-width:768px){
+    .homeBody{
+        background:url('../img/landingMobile.svg');
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: 100%;
+    }
+} 

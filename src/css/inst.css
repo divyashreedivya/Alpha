@@ -1,0 +1,26 @@
+
+.insts-container{
+    color: white;
+    background: url('../img/instBg.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.inst-card{
+    color: #fffc98;
+    text-shadow: 2px 2px 10px black;
+    padding: 2%;
+    /* border-radius: 50px; */
+    margin-bottom: 2%;
+    background-color: rgba(23, 82, 79, 0.623);
+    background: linear-gradient(180deg, rgba(229, 229, 229, 0.67) 18.75%, #663B9C 100%);
+    background: linear-gradient(180deg, rgba(229, 229, 229, 0.38) 0%, rgba(189, 176, 206, 0.684487) 45.31%, #663B9C 100%);
+    width:75%;
+    float:center;
+    margin-left: 15%;
+}
+.area{
+    font-weight: 700;
+    font-size: 110%;
+}

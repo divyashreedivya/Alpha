@@ -1,0 +1,40 @@
+.comp-container{
+    background: url('../img/stockBg.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    min-height: 100vh;
+    background-size: cover;
+    color: white;
+    text-shadow: 2px 2px 7px rgb(0, 0, 0);
+}
+.comp-container table{
+    padding: 2%;
+    margin: 2%;
+    margin-left: 25%;
+}
+
+td,th{
+    padding: 2%;
+    text-align: left;
+}
+tr:hover{
+    background-color: rgba(151, 206, 255, 0.13);
+
+}
+.comp-container table button{
+    border-radius: 10px;
+}
+@media all and (max-width:768px){
+.comp-container table{
+    margin:0;
+    padding: 0;
+}
+td{
+    padding: 1%;
+}
+.comp-container table button{
+    padding: 1%;
+    border-radius: 5px;
+}
+} 
