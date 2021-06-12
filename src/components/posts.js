@@ -65,7 +65,7 @@ useEffect(()=>{
             <div className="row">
                 
                 {posts.map((post,key)=>(
-                    <Link to={`/posts/`+post._id} className="col-md-6">
+                    <Link key={key} to={`/posts/`+post._id} className="col-md-6">
                     <div >
                         <div className="posts">
                         {post.tags.map((tag)=>(

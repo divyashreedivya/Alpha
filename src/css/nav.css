@@ -50,12 +50,15 @@ li{
     background-size: contain;
     background-position: bottom;
 
-    width:97%;
+    width:100%;
     filter:blur(100%);
     height:100%;
     z-index: 5;
     margin:0;
     position: fixed;
+    left:0;
+    top:0;
+    right:0;
     transition: 0.5s;
 }
 .navclose{
@@ -83,14 +86,10 @@ li{
     width:50px;
     height: 50px;
    }
-.navopen{
-    /* animation: navslide1 0.5s ease-in-out; */
-    width:88%;
-}
 .link{
     font-size: 150%;
 }
-li{
+.navopen li{
     padding: 5%;
 }
 }
