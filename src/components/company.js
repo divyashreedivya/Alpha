@@ -26,8 +26,8 @@ export default function Company(){
     }
 
 useEffect(()=>{
-    setComps(compData.data);
-    //getComps();
+    // setComps(compData.data);
+    getComps();
 },[])
     return(
         <div className="container-fluid comp-container">

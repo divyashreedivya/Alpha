@@ -36,6 +36,7 @@
     float: center;
     margin-bottom: 2%;
     border: solid 2px white;
+    animation: infoslide 1s ease-in-out;
 }
 .userLoc{
     background:  url('../img/locationUser.svg');
@@ -45,6 +46,7 @@
     background-position: center;
     text-align: center;
     border-radius: 20px;
+    animation: infoslide 1s ease-in-out;
 }
 @media all and (max-width:768px){
     .userInfo{
