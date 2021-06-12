@@ -1,6 +1,9 @@
 import React,{useState} from 'react';
 import '../css/nav.css';
 import {NavLink} from 'react-router-dom';
+import { Icon, InlineIcon } from '@iconify/react';
+import hamburgerMenu from '@iconify/icons-radix-icons/hamburger-menu';
+
 
 export default function Navbar(){
     const [open,setOpen] = useState(false);
@@ -14,7 +17,9 @@ export default function Navbar(){
         <div className="row">
 
         </div>
-             <button className="navbtn" onClick={toggleNav}>+</button>
+             <button className="navbtn" onClick={toggleNav}>
+             <Icon icon={hamburgerMenu} style={{color: 'white', fontSize: '40px'}} />
+             </button>
   
   <div className={open?"navopen":"navclose"}>
    <ul>

@@ -1,3 +1,11 @@
+@keyframes cardgrow {
+    0%{
+        transform: scale(0.8);
+    }
+    100%{
+      transform: scale(1);
+    }
+}
 .usersContainer{
     background:  url('../img/usersBg.svg');
     background-attachment: fixed;
@@ -7,9 +15,10 @@
     min-height: 100vh;
     color: white;
 }
-/* .userDet{
-    width:fit-content;
-} */
+.userCard{
+    position: relative;
+    animation: cardgrow 1s ease-in-out;
+}
 .userDisp{
     background: #ffffff70;
     height:200px;

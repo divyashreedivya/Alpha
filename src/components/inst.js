@@ -23,8 +23,8 @@ export default function Insts(){
     }
 
     useEffect(()=>{
-    //setInsts(instData.data);
-getInsts();
+    setInsts(instData.data);
+//getInsts();
     },[])
 
     return(

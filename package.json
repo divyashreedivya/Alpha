@@ -40,8 +40,10 @@
   },
   "devDependencies": {
     "@iconify/icons-ant-design": "^1.1.0",
+    "@iconify/icons-codicon": "^1.1.15",
     "@iconify/icons-el": "^1.1.0",
     "@iconify/icons-grommet-icons": "^1.1.2",
+    "@iconify/icons-radix-icons": "^1.1.2",
     "@iconify/react": "^1.1.4"
   }
 }

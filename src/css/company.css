@@ -1,3 +1,20 @@
+@keyframes grow {
+    0%{
+        transform:scale(0.8);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@keyframes fade {
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+
 .comp-container{
     background: url('../img/stockBg.svg');
     background-repeat: no-repeat;
@@ -12,6 +29,7 @@
     padding: 2%;
     margin: 2%;
     margin-left: 25%;
+    animation:fade 1s ease-in-out;
 }
 
 td,th{
@@ -24,6 +42,9 @@ tr:hover{
 }
 .comp-container table button{
     border-radius: 10px;
+}
+.comp-container h1{
+    animation:grow 1s ease-in-out;
 }
 @media all and (max-width:768px){
 .comp-container table{

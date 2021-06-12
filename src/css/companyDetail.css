@@ -10,3 +10,15 @@
 .comp-content{
     padding:2%;
 }
+.info{
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: left;
+    padding: 1%;
+    margin-left: 5%;
+}
+@media all and (max-width:768px){
+    .info{
+        margin:0;
+    }
+}

@@ -34,8 +34,49 @@ export default function CompanyDetail(props){
             <div>
                 <h1>{comp.Name}</h1>
                 <p  className="comp-content">{comp.Description}</p>
-                <div>
-                    
+                <div className="row">
+                <div className="col-md-3 info">
+                    <p>Symbol - {comp.Symbol}</p>
+                    <p>Asset Type - {comp.AssetType}</p>
+                    <p>CIK - {comp.CIK}</p>
+                    <p>Exchange - {comp.Exchange}</p>
+                    <p>Currency - {comp.Currency}</p>
+                </div>
+                <div className="col-md-3 info">
+                    <p>Country - {comp.Country}</p>
+                    <p>Sector - {comp.Sector}</p>
+                    <p>Industry - {comp.Industry}</p>
+                    <p>Address - {comp.Address}</p>
+                </div>
+                <div className="col-md-3 info">
+                    <p>Full Time Employees - {comp.FullTimeEmployees}</p>
+                    <p>Fiscal Year End - {comp.FiscalYearEnd}</p>
+                    <p>Latest Quarter - {comp.LatestQuarter}</p>
+                    <p>Market Capitalization - {comp.MarketCapitalization}</p>
+                    <p>EBITDA - {comp.EBITDA}</p>
+                </div>
+                </div>
+                <div className="row">
+                <div className="col-md-3 info">
+                    <p>Symbol - {comp.Symbol}</p>
+                    <p>Asset Type - {comp.AssetType}</p>
+                    <p>CIK - {comp.CIK}</p>
+                    <p>Exchange - {comp.Exchange}</p>
+                    <p>Currency - {comp.Currency}</p>
+                </div>
+                <div className="col-md-3 info">
+                    <p>Country - {comp.Country}</p>
+                    <p>Sector - {comp.Sector}</p>
+                    <p>Industry - {comp.Industry}</p>
+                    <p>Address - {comp.Address}</p>
+                </div>
+                <div className="col-md-3 info">
+                    <p>Full Time Employees - {comp.FullTimeEmployees}</p>
+                    <p>Fiscal Year End - {comp.FiscalYearEnd}</p>
+                    <p>Latest Quarter - {comp.LatestQuarter}</p>
+                    <p>Market Capitalization - {comp.MarketCapitalization}</p>
+                    <p>EBITDA - {comp.EBITDA}</p>
+                </div>
                 </div>
             </div>
         </div>

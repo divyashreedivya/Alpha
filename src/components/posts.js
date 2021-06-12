@@ -7,6 +7,8 @@ import {Link} from 'react-router-dom';
 
 export default function Posts(){
     const [posts,setPosts] = useState([]);
+    const [allposts,setAllposts] = useState([]);
+    const [searchtext,setSearchtext] = useState("");
     const getPosts=()=>{
         axios.get("https://dummy-wireframe.iecsemanipal.com/social-media/posts",{
             params:{
@@ -15,16 +17,37 @@ export default function Posts(){
         })
         .then((resp)=>{
             setPosts(resp.data.data);
-            console.log(resp.data.data);
+            setAllposts(resp.data.data);
+            console.log(allposts);
         })
         .catch(err=>{
             console.log(err);
         })
     }
+const excludeCols = ["link","likes"];
+   const handleChange=(value)=>{
+       setSearchtext(value);
+       filterPosts(value);
+   }
+
+   const filterPosts = (value)=>{
+       const lvalue = value.toLowerCase().trim();
+       if(lvalue==="") setPosts(allposts);
+       
+       else{
+           const filteredPosts = posts.filter((item)=>{
+               return Object.keys(item).some(key=>
+                excludeCols.includes(key) ? false : item[key].toString().toLowerCase().includes(lvalue));
+           });
+           setPosts(filteredPosts);
+       }
+   }
+
 useEffect(()=>{
-    getPosts();
+    //getPosts();
     //console.log(postsData.data);
-    // setPosts(postsData.data);
+    setPosts(postsData.data);
+    setAllposts(postsData.data);
     //console.log(posts);
 },[]);
 
@@ -35,7 +58,8 @@ useEffect(()=>{
             <h1>Social media posts</h1>
             <br/>
            <form>
-               <input type="text" className="form-control" placeholder="Search posts by tags"></input>
+               <input type="text" className="form-control" placeholder="Search posts"
+               onChange={e=>handleChange(e.target.value)}></input>
            </form>
            <br/>
             <div className="row">

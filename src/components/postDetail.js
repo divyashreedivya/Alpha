@@ -4,7 +4,9 @@ import '../css/postDetails.css';
 import { Icon, InlineIcon } from '@iconify/react';
 import tagsIcon from '@iconify/icons-el/tags';
 import likeFilled from '@iconify/icons-ant-design/like-filled';
+import chromeClose from '@iconify/icons-codicon/chrome-close';
 import axios from 'axios';
+import {Link} from 'react-router-dom';
 
 export default function PostDetail(props){
     const [post,setPost] = useState([]);
@@ -45,6 +47,9 @@ const showTags = ()=>{
 <br/>
 <div className="post-container">
    <h1>Post </h1>
+   <button className="back"><Link to="/posts">
+   <Icon icon={chromeClose} style={{fontSize: '20px'}} />
+       </Link></button>
    <div className="row">
        <div className='col-md-12'>
            <img className=" post-img"src={post.image} alt="Post image"></img>

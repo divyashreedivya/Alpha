@@ -48,7 +48,15 @@ position: absolute;
     padding: 1%;
     text-align: left;
 }
-
+.back{
+    position: relative;
+    top:10%;
+    right: 10%;
+    float: right;
+    width:40px;
+    height:40px;
+    border-radius: 50px;
+}
 .likeicon{
     right:5%;
     bottom: 10%;

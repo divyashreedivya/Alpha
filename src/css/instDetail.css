@@ -1,3 +1,14 @@
+@keyframes grow {
+    0%{
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
 .inst-container{
     color: white;
     background: url('../img/instBg.svg');
@@ -14,7 +25,18 @@
     text-align: left;
     border: double 5px white;
     padding: 1%;
+    animation: grow 1s ease-in-out;
 }
+.backbtn{
+    position: relative;
+    top:0;
+    right: 0;
+    float: right;
+    width:40px;
+    height:40px;
+    border-radius: 50px;
+}
+
 @media all and (max-width:768px){
     .instdetail{
         width: 100%;

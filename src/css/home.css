@@ -11,6 +11,46 @@
 .homecon{
     /* position: absolute; */
     z-index:-1;
+    color: white;
+}
+svg text{
+    stroke:white;
+    font-size:150px;
+    font-weight: 600;
+    stroke-width:1;
+    animation: textAnimate 5s;
+}
+.homecon h1{
+    position: absolute;
+    right:1%;
+    bottom: 0;
+    animation: textColor 5s infinite;
+}
+
+@keyframes textAnimate{
+    0%{
+        stroke-dasharray: 0 50%;
+        stroke-dashoffset: 20%;
+    }
+    100%{
+        stroke-dasharray: 50% 0;
+        stroke-dashoffset: -20%;
+    }
+}
+
+@keyframes textColor {
+    0%{
+        color: white;
+    }
+    50%{
+        color: rgb(255, 255, 108);
+    }
+    75%{
+        color: rgb(255, 95, 95);
+    }
+    100%{
+        color: rgb(77, 250, 77);
+    }
 }
 
 @media all and (max-width:768px){

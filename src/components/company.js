@@ -31,7 +31,8 @@ useEffect(()=>{
 },[])
     return(
         <div className="container-fluid comp-container">
-             <h1>Compan Stocks</h1>
+            <br/>
+             <h1>Stocks</h1>
              <Navbar></Navbar>
              <br/>
              <table>

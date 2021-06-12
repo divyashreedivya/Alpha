@@ -32,7 +32,7 @@ export default function Users(){
             <h1>Users</h1>
             <div className="row">
                 {users.map((user,key)=>(
-                    <Link to={`users/${user._id}`}  key={key} className="col-md-3">
+                    <Link to={`users/${user._id}`}  key={key} className="col-md-3 userCard">
                      <div>
                     <div className=" userDisp">
                          <img src={user.picture} className="userImg" alt="Profile pic"></img>
