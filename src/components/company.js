@@ -1,7 +1,6 @@
 import React,{ useEffect, useState} from "react";
 import Navbar from "./navbar";
 import '../css/company.css';
-import {compData} from '../data/company';
 import { Icon, InlineIcon } from '@iconify/react';
 import formNextLink from '@iconify/icons-grommet-icons/form-next-link';
 import axios from "axios";
@@ -18,7 +17,7 @@ export default function Company(){
         })
         .then((resp)=>{
             setComps(resp.data.data);
-            console.log(resp.data.data);
+            //console.log(resp.data.data);
         })
         .catch(err=>{
             console.log(err);
@@ -26,7 +25,6 @@ export default function Company(){
     }
 
 useEffect(()=>{
-    // setComps(compData.data);
     getComps();
 },[])
     return(

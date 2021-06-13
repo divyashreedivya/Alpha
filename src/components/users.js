@@ -1,7 +1,6 @@
 import React,{useEffect, useState} from 'react';
 import '../css/users.css';
 import Navbar from './navbar';
-import {userData} from '../data/users.js';
 import axios from 'axios';
 import {Link} from 'react-router-dom';
 
@@ -22,9 +21,7 @@ export default function Users(){
     }
 
     useEffect(()=>{
-        // console.log(userData.data[0].picture);
-         setUsers(userData.data);
-        //getUsers();
+        getUsers();
     },[])
     return(
         <div className="container-fluid usersContainer">

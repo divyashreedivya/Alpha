@@ -33,6 +33,9 @@
 .tags{
     margin: 1%;
 }
+.post-link{
+    text-decoration: none;
+}
 @media all and (max-width:768px){
     /* .posts-container{
         margin-top: 3%;

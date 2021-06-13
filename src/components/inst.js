@@ -1,6 +1,5 @@
 import React,{useEffect, useState} from 'react';
 import '../css/inst.css';
-import {instData} from '../data/inst';
 import Navbar from './navbar';
 import axios from 'axios';
 import {Link} from 'react-router-dom';
@@ -23,8 +22,7 @@ export default function Insts(){
     }
 
     useEffect(()=>{
-    setInsts(instData.data);
-//getInsts();
+        getInsts();
     },[])
 
     return(

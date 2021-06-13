@@ -11,12 +11,8 @@ Submission for IECSE Wireframe event
 It has the following pages:
 1. Home Page
 2. Users Page
-
-    Displays the social media users
 3. User Details Page
 4. Posts page
-
-    * Displays social media posts
     * Has a search bar which filters the posts according to the entered words
 5. Post Details Page
 6. Institutions Page

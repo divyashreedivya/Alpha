@@ -1,7 +1,6 @@
 import axios from 'axios';
 import React,{useEffect, useState} from 'react';
 import '../css/posts.css';
-import {postsData} from '../data/posts';
 import Navbar from './navbar';
 import {Link} from 'react-router-dom';
 
@@ -18,7 +17,7 @@ export default function Posts(){
         .then((resp)=>{
             setPosts(resp.data.data);
             setAllposts(resp.data.data);
-            console.log(allposts);
+            //console.log(allposts);
         })
         .catch(err=>{
             console.log(err);
@@ -44,11 +43,7 @@ const excludeCols = ["link","likes"];
    }
 
 useEffect(()=>{
-    //getPosts();
-    //console.log(postsData.data);
-    setPosts(postsData.data);
-    setAllposts(postsData.data);
-    //console.log(posts);
+    getPosts();
 },[]);
 
     return(
@@ -65,16 +60,14 @@ useEffect(()=>{
             <div className="row">
                 
                 {posts.map((post,key)=>(
-                    <Link key={key} to={`/posts/`+post._id} className="col-md-6">
-                    <div >
+                    <Link key={key} to={`/posts/`+post._id} className="post-link col-md-6">
+                    <div>
                         <div className="posts">
                         {post.tags.map((tag)=>(
                             <span className="badge bg-primary tags">{tag}</span>
                         ))}
                         <p>{post.text}</p>
                     </div>
-
-                    {/* <div className="col-md-6"></div> */}
                     </div>
                     </Link>
                 ))}

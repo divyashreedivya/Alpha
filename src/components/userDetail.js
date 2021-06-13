@@ -17,7 +17,7 @@ const getUser = ()=>{
         }
     })
     .then((resp)=>{
-        console.log(resp.data.data.location);
+        //console.log(resp.data.data.location);
         setUser(resp.data.data);
         setLoc(resp.data.data.location);
     })
@@ -61,7 +61,7 @@ const getUser = ()=>{
             <hr/>
             <p>DOB: {user.dateOfBirth}</p>
             <hr/>
-            <p>Gender:{user.gender}</p>
+            <p>Gender: {user.gender}</p>
             <hr/>
             <p>Register Date: {user.registerDate}</p>
             </div>

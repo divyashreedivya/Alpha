@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import '../css/companyDetail.css';
-import {compData} from '../data/company';
 import Navbar from './navbar';
 import axios from 'axios';
 import { Icon, InlineIcon } from '@iconify/react';
@@ -51,8 +50,6 @@ export default function CompanyDetail(props){
 
     useEffect(()=>{
         getComp();
-        //setComp(compData.data[0]);
-        console.log(comp);
     },[]);
     return(
         <div className="container comp-container">

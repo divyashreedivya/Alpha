@@ -31,14 +31,11 @@ const getPost = ()=>{
 }
 
 const showTags = ()=>{
-    console.log(post.tags);
+    //console.log(post.tags);
     setOpenTags(!opentags);
 }
 
     useEffect(()=>{
-        // setPost(postData.data[0]);
-        // setTags(postData.data[0].tags);
-        // setOwner(postData.data[0].owner);
         getPost();
     },[])
     return(
@@ -55,7 +52,7 @@ const showTags = ()=>{
            <img className=" post-img"src={post.image} alt="Post image"></img>
        </div>
    </div>
-   <a href={post.link}>Link</a>
+   <a target="_blank" href={post.link}>Link</a>
    <div className="post-text">
        <p>{post.text}</p>
    </div>

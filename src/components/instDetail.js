@@ -17,7 +17,7 @@ export default function InstDetail(props){
         })
         .then((resp)=>{
             setInst(resp.data.data);
-            console.log(inst);
+            //console.log(inst);
         })
         .catch((err)=>{
             console.log(err);
@@ -25,7 +25,6 @@ export default function InstDetail(props){
     }
 
     useEffect(()=>{
-    // setInst(instData.data[0]);
     getInst();
     },[]);
     return(
