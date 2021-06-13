@@ -17,7 +17,7 @@ require('dotenv').config();
 function App() {
   return (
     <div className="App">
-     <Router>
+     <Router basename="/Alpha">
        <Route path="/" exact component={Home}/>
        <Route path="/users" exact component={Users}/>
        <Route path="/users/:id" exact component={UserDetail}/>
