@@ -3,6 +3,9 @@ import '../css/companyDetail.css';
 import {compData} from '../data/company';
 import Navbar from './navbar';
 import axios from 'axios';
+import { Icon, InlineIcon } from '@iconify/react';
+import chromeClose from '@iconify/icons-codicon/chrome-close';
+import {Link} from 'react-router-dom';
 
 
 import Carousel from 'react-multi-carousel';
@@ -55,6 +58,9 @@ export default function CompanyDetail(props){
         <div className="container comp-container">
             <Navbar></Navbar>
             <br/><br/>
+            <button className="back"><Link to="/stocks">
+   <Icon icon={chromeClose} style={{fontSize: '20px'}} />
+       </Link></button>
             <div>
                 <h1>{comp.Name}</h1>
                 <p  className="comp-content">{comp.Description}</p>

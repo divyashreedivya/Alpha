@@ -28,6 +28,7 @@
     animation: grow 1s ease-in-out;
 }
 .backbtn{
+    color:#3E245F;
     position: relative;
     top:0;
     right: 0;
@@ -35,6 +36,7 @@
     width:40px;
     height:40px;
     border-radius: 50px;
+    border: solid 1px #835db4;
 }
 
 @media all and (max-width:768px){

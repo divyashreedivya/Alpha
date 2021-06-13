@@ -18,9 +18,10 @@
 .userCard{
     position: relative;
     animation: cardgrow 1s ease-in-out;
+    text-decoration: none;
 }
 .userDisp{
-    background: #ffffff70;
+    background: #ffffff00;
     height:200px;
     width: 200px;
     float: center;
@@ -31,6 +32,7 @@
     margin-left: 15%;
 
 }
+
 .usersInfo{
     background: #000000;
     height:50px;
@@ -38,7 +40,7 @@
     color: #ffffff;
 }
 .userName{
-    top:10%;
+    top:20%;
     position: relative;
     text-align: center;
 }
@@ -46,8 +48,14 @@
     top:5%;
     position: relative;
     border-radius: 10px;
+    border: solid 2px black;
 }
-
+.userImg:hover{
+    box-shadow: 2px 2px 5px 5px #0000004b;
+}
+.userName:hover{
+    text-shadow:5px 10px 15px #aa8ad4;
+}
 @media all and (max-width:768px){
     .usersContainer{
        align-items: center;

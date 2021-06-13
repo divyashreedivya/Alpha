@@ -34,7 +34,7 @@ export default function Insts(){
             <br/>
             <div className="row">
                 {insts.map((inst,key)=>(
-                    <Link to={`/institutions/${inst._id}`} key={key} className="col-md-6">
+                    <Link to={`/institutions/${inst._id}`} key={key} className="col-md-6 next">
                     <div>
                         <div className="inst-card">
                         <p className="area"> {inst.area_name}</p>

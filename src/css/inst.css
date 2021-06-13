@@ -31,7 +31,106 @@
     margin-left: 15%;
     animation: cardslide 1s ease-in-out;
 }
+.inst-card:hover{
+    transform: scale(1.01);
+}
 .area{
     font-weight: 700;
     font-size: 110%;
+}
+.next{
+    text-decoration: none;
+}
+.inst-card:before{
+    position: absolute;
+    content: "";
+    height: 0;
+    border: 2px solid transparent;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    box-sizing: border-box;
+}
+.inst-card:after{
+    position: absolute;
+    content: "";
+    height: 0;
+    border: 2px solid transparent;
+top:0;
+right:0;
+    width: 0;
+    box-sizing: border-box;
+}
+.inst-card:hover:before{
+    height: 110px;
+    width: 487px;
+    border: 2px solid white;
+    border-right: none;
+    border-bottom: none;
+    transition: height 0.5s linear,
+                width 0.5s linear 0.5s;
+}
+.inst-card:hover:after{
+    height: 110px;
+    width: 487px;
+    border: 2px solid white;
+    border-left: none;
+    border-top: none;
+    transition: height 0.5s linear,
+                width 0.5s linear 0.5s;
+}
+
+/* @media all and (max-width:320px){
+    .inst-card:hover:before{
+        height:200px;
+        width:100px;
+    }
+    .inst-card:hover:after{
+        height:120px;
+        width:170px; 
+    }
+} */
+
+@media all and (max-width:768px){
+    .inst-card:hover:before{
+        height:120px;
+        width:250px;
+    }
+    .inst-card:hover:after{
+        height:120px;
+        width:250px; 
+    }
+}
+@media (device-height : 568px) 
+   and (device-width : 320px) 
+   and (-webkit-min-device-pixel-ratio: 2)
+{
+    .inst-card:hover:before{
+        height:120px;
+        width:220px;
+    }
+    .inst-card:hover:after{
+        height:120px;
+        width:220px; 
+    }
+}
+@media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+    .inst-card:hover:before{
+        height:100px;
+        width:365px;
+    }
+    .inst-card:hover:after{
+        height:100px;
+        width:365px; 
+    }
+}
+@media only screen and  (device-width:280px) and (device-height:653px){
+    .inst-card:hover:before{
+        height:140px;
+        width:190px;
+    }
+    .inst-card:hover:after{
+        height:140px;
+        width:190px; 
+    }
 }

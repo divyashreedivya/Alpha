@@ -37,7 +37,7 @@ export default function Users(){
                     <div className=" userDisp">
                          <img src={user.picture} className="userImg" alt="Profile pic"></img>
                      <div className="usersInfo">
-                     <p className="userName">{user.firstName}</p>
+                     <p className="userName">{user.firstName} {user.lastName}</p>
                      </div>
                      </div>
                      </div></Link>

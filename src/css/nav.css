@@ -40,6 +40,10 @@ li{
     font-size: 200%;
     font-weight: 700;
 }
+.link:hover{
+    text-shadow:5px 10px 15px #ffffff48;
+}
+
 .navopen{
     border: solid 20px black;
     animation: navslide 0.5s ease-out;
@@ -79,6 +83,17 @@ li{
     background: url('../img/navbutton.svg');
     background-size: cover;
    
+}
+.navbtn:hover{
+    animation: btngrow 1s ease;
+}
+@keyframes btngrow {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
 }
 
 @media all and (max-width:768px){

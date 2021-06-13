@@ -2,6 +2,9 @@ import React, {useState,useEffect} from'react';
 import '../css/userDetail.css';
 import Navbar from './navbar';
 import axios from 'axios';
+import { Icon, InlineIcon } from '@iconify/react';
+import chromeClose from '@iconify/icons-codicon/chrome-close';
+import {Link} from 'react-router-dom';
 
 export default function UserDetail(props){
     const [user,setUser] = useState([]);
@@ -30,17 +33,14 @@ const getUser = ()=>{
         <div className="container-fluid userDetail">
         <Navbar></Navbar>
         <h1>User details</h1>
-        
+        <button className="back"><Link to="/users">
+   <Icon icon={chromeClose} style={{fontSize: '20px'}} />
+       </Link></button>
         <div className="row">
             <div className="col-md-6 order-md-2">
                 <img src={user.picture} alt="User pic"
                 className="userPic"></img>
             <div className="userLoc">
-                {/* <p>State: {user.location.state}</p>
-                <p>Street:{user.location.street}</p>
-                <p>City: {user.location.city}</p>
-                <p>Timezone:{user.location.timezone}</p>
-                <p>Country:{user.location.country}</p> */}
                  <p>State: {loc.state}</p>
                 <p>Street:{loc.street}</p>
                 <p>City: {loc.city}</p>
